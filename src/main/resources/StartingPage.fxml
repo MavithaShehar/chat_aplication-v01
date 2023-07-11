@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="Pane" prefHeight="600.0" prefWidth="450.0" style="-fx-background-color: WHITE; -fx-background-radius: 15; -fx-border-radius: 60;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.StartingPageController">
+   <children>
+      <Text fill="#726e6e" layoutX="22.0" layoutY="92.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Wellcome " textAlignment="CENTER">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="29.0" />
+         </font>
+      </Text>
+      <JFXButton fx:id="btnGetStarted" buttonType="RAISED" layoutX="141.0" layoutY="514.0" onAction="#btnGetStartedOnAction" prefHeight="41.0" prefWidth="169.0" style="-fx-background-radius: 15; -fx-border-radius: 15; -fx-border-color: red;" text="Click Start " textFill="#bc1212">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </JFXButton>
+      <Text fill="#db0909ec" layoutX="121.0" layoutY="151.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" kit caht app" textAlignment="CENTER">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="29.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="152.0" fitWidth="167.0" layoutX="141.0" layoutY="184.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../Users/DELL/Downloads/icons8-peace-pigeon-100.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

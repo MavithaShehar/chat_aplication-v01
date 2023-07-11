@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="Pane" prefHeight="450.0" prefWidth="350.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddClientController">
+   <children>
+      <Text layoutX="51.0" layoutY="68.0" strokeType="OUTSIDE" strokeWidth="0.0" text="JOIN CHAT">
+         <font>
+            <Font name="Calisto MT Bold" size="41.0" />
+         </font>
+      </Text>
+      <ImageView fx:id="image" fitHeight="146.0" fitWidth="158.0" layoutX="96.0" layoutY="133.0">
+         <image>
+            <Image url="@assets/icons8-peace-pigeon-100.png" />
+         </image>
+      </ImageView>
+      <JFXTextField fx:id="txtField" layoutX="65.0" layoutY="323.0" onAction="#txtFieldOnAction" prefHeight="25.0" prefWidth="221.0" promptText="Enter name " />
+      <JFXButton fx:id="btnJoin" buttonType="RAISED" layoutX="135.0" layoutY="378.0" onAction="#btnJoinOnAction" prefHeight="33.0" prefWidth="81.0" text="join" textFill="#f50a0a">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

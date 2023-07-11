@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="450.0" style="-fx-background-color: WHITE; -fx-background-radius: 15; -fx-border-radius: 15;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ChatServerController">
+   <children>
+      <JFXButton fx:id="btnsend" buttonType="RAISED" layoutX="316.0" layoutY="543.0" onAction="#btnsendOnAction" prefHeight="34.0" prefWidth="83.0" text="Send" textFill="#0fa851">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <ImageView fitHeight="41.0" fitWidth="42.0" layoutX="370.0" layoutY="41.0">
+         <image>
+            <Image url="@../../../../../../../Users/DELL/Downloads/icons8-customer-30.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <JFXTextField fx:id="txtField" labelFloat="true" layoutX="31.0" layoutY="543.0" onAction="#txtFieldOnAction" prefHeight="25.0" prefWidth="260.0" promptText="Sever message " />
+      <JFXButton fx:id="btnAddClient" buttonType="RAISED" layoutX="370.0" layoutY="41.0" onAction="#btnAddClientOnAction" prefHeight="41.0" prefWidth="42.0" style="-fx-border-radius: 50; -fx-background-radius: 50;" text="Button" textFill="TRANSPARENT">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <ScrollPane layoutX="31.0" layoutY="94.0">
+         <content>
+            <VBox fx:id="vBox" prefHeight="437.0" prefWidth="388.0" />
+         </content>
+      </ScrollPane>
+      <Label layoutX="155.0" layoutY="32.0" prefHeight="47.0" prefWidth="126.0" text="Server">
+         <font>
+            <Font name="System Bold" size="32.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

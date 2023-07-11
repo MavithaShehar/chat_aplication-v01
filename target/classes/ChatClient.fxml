@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="pane" prefHeight="524.0" prefWidth="431.0" style="-fx-background-color: WHITE; -fx-background-radius: 15; -fx-border-radius: 15;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ChatClientController">
+   <children>
+      <Text fx:id="txtChatRoom" fill="#360404" layoutX="102.0" layoutY="68.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" Client" textAlignment="CENTER" wrappingWidth="220.50341796875">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="29.0" />
+         </font>
+      </Text>
+      <JFXButton fx:id="btnsend" buttonType="RAISED" layoutX="336.0" layoutY="462.0" onAction="#btnsendOnAction" prefHeight="34.0" prefWidth="83.0" text="Send" textFill="#18eb4d">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </JFXButton>
+      <JFXTextField fx:id="txtField" labelFloat="true" layoutX="59.0" layoutY="471.0" onAction="#txtFieldOnAction" prefHeight="29.0" prefWidth="221.0" promptText="Type" />
+      <JFXButton fx:id="btnSendImage" buttonType="RAISED" layoutX="295.0" layoutY="469.0" onAction="#btnSendImageOnAction" prefHeight="33.0" prefWidth="42.0" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <graphic>
+            <ImageView fitHeight="29.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@assets/icons8-image-48.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <ScrollPane layoutX="14.0" layoutY="86.0" prefHeight="368.0" prefWidth="405.0">
+         <content>
+            <VBox fx:id="vBox" prefHeight="298.0" prefWidth="403.0" />
+         </content>
+      </ScrollPane>
+      <ImageView fitHeight="40.0" fitWidth="42.0" layoutX="10.0" layoutY="465.0">
+         <image>
+            <Image url="@assets/icons8-face-without-mouth-48.png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="emojiBtn" buttonType="RAISED" layoutX="14.0" layoutY="468.0" onAction="#emojiBtnOnAction" prefHeight="33.0" prefWidth="33.0" style="-fx-background-color: transparent;" textFill="#e4d03700">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+   </children>
+</AnchorPane>
